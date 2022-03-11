@@ -3439,6 +3439,36 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "SeleniumFramework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ExcelDataReader": "3.6.0",
+          "ExcelDataReader.DataSet": "3.6.0",
+          "ExtentReports": "4.1.0",
+          "Microsoft.Extensions.Configuration": "6.0.1",
+          "Microsoft.Extensions.Configuration.Binder": "6.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "6.0.0",
+          "Microsoft.Extensions.Configuration.Json": "6.0.0",
+          "Microsoft.NET.Test.Sdk": "16.9.4",
+          "NUnit": "3.13.2",
+          "NUnit3TestAdapter": "4.2.1",
+          "Selenium.Support": "4.1.0",
+          "Selenium.WebDriver": "4.1.0",
+          "Selenium.WebDriver.ChromeDriver": "99.0.4844.5100",
+          "SpecFlow": "3.9.58",
+          "SpecFlow.Assist.Dynamic": "1.4.2",
+          "SpecFlow.NUnit": "3.9.58",
+          "SpecFlow.Tools.MsBuild.Generation": "3.9.58",
+          "System.Data.SqlClient": "4.8.3"
+        },
+        "compile": {
+          "bin/placeholder/SeleniumFramework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SeleniumFramework.dll": {}
+        }
       }
     }
   },
@@ -10885,6 +10915,11 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "SeleniumFramework/1.0.0": {
+      "type": "project",
+      "path": "../SeleniumFramework/SeleniumFramework.csproj",
+      "msbuildProject": "../SeleniumFramework/SeleniumFramework.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10902,6 +10937,7 @@
       "Selenium.Support >= 4.1.0",
       "Selenium.WebDriver >= 4.1.0",
       "Selenium.WebDriver.ChromeDriver >= 99.0.4844.5100",
+      "SeleniumFramework >= 1.0.0",
       "SpecFlow >= 3.9.58",
       "SpecFlow.Assist.Dynamic >= 1.4.2",
       "SpecFlow.NUnit >= 3.9.58",
@@ -10941,7 +10977,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\NAVEEN\\source\\repos\\AmazonProject\\SeleniumFramework\\SeleniumFramework.csproj": {
+              "projectPath": "C:\\Users\\NAVEEN\\source\\repos\\AmazonProject\\SeleniumFramework\\SeleniumFramework.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
